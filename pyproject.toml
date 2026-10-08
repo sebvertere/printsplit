@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "printsplit"
+version = "0.2.0"
+description = "Split big meshes (armor, costumes, props) into pieces that fit the 3D printers you actually own, with dowel sockets on every seam."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["trimesh", "numpy", "scipy", "manifold3d", "networkx", "shapely", "rtree"]
+keywords = ["3d-printing", "mesh", "splitting", "cosplay", "armor", "build-volume"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+printsplit = "printsplit.cli:main"
+
+[tool.setuptools]
+packages = ["printsplit"]
+
+[tool.setuptools.package-data]
+printsplit = ["printers.json", "web/*.html"]

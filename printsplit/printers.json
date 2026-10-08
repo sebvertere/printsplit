@@ -1,0 +1,3086 @@
+{
+ "source": "OrcaSlicer resources/profiles (AGPL-3.0 project; values are public machine specs)",
+ "units": "mm",
+ "printers": [
+  {
+   "vendor": "Afinia",
+   "model": "Afinia H+1(HS)",
+   "x": 207.0,
+   "y": 255.0,
+   "z": 230.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anker",
+   "model": "Anker M5",
+   "x": 235.0,
+   "y": 235.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anker",
+   "model": "Anker M5 All-Metal Hot End",
+   "x": 235.0,
+   "y": 235.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anker",
+   "model": "Anker M5C",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic 4Max Pro",
+   "x": 270.0,
+   "y": 205.0,
+   "z": 200.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic 4Max Pro 2",
+   "x": 270.0,
+   "y": 210.0,
+   "z": 190.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Chiron",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 450.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra 2",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra 2 Max",
+   "x": 420.0,
+   "y": 420.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra 2 Neo",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra 2 Plus",
+   "x": 320.0,
+   "y": 320.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra 2 Pro",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra 3",
+   "x": 255.0,
+   "y": 255.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra 3 Max",
+   "x": 426.0,
+   "y": 420.0,
+   "z": 501.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra 3 V2",
+   "x": 255.0,
+   "y": 255.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra Max",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 450.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra Neo",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra Plus",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 350.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra S1",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra S1 Max",
+   "x": 350.0,
+   "y": 350.0,
+   "z": 350.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Kobra X",
+   "x": 260.0,
+   "y": 260.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Predator",
+   "x": 370.0,
+   "y": 370.0,
+   "z": 455.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic Vyper",
+   "x": 250.0,
+   "y": 255.0,
+   "z": 265.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Anycubic",
+   "model": "Anycubic i3 Mega S",
+   "x": 210.0,
+   "y": 210.0,
+   "z": 205.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Artillery",
+   "model": "Artillery Genius",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Artillery",
+   "model": "Artillery Genius Pro",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Artillery",
+   "model": "Artillery Hornet",
+   "x": 230.0,
+   "y": 230.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Artillery",
+   "model": "Artillery M1 Pro",
+   "x": 260.0,
+   "y": 260.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Artillery",
+   "model": "Artillery Sidewinder X1",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Artillery",
+   "model": "Artillery Sidewinder X2",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Artillery",
+   "model": "Artillery Sidewinder X3 Plus",
+   "x": 300.0,
+   "y": 305.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Artillery",
+   "model": "Artillery Sidewinder X3 Pro",
+   "x": 240.0,
+   "y": 245.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Artillery",
+   "model": "Artillery Sidewinder X4 Plus",
+   "x": 300.0,
+   "y": 310.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Artillery",
+   "model": "Artillery Sidewinder X4 Pro",
+   "x": 240.0,
+   "y": 250.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab A1",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 256.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab A1 mini",
+   "x": 180.0,
+   "y": 180.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab A2L",
+   "x": 330.0,
+   "y": 320.0,
+   "z": 325.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab H2C",
+   "x": 330.0,
+   "y": 320.0,
+   "z": 325.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab H2D",
+   "x": 350.0,
+   "y": 320.0,
+   "z": 325.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab H2D Pro",
+   "x": 350.0,
+   "y": 320.0,
+   "z": 325.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab H2S",
+   "x": 340.0,
+   "y": 320.0,
+   "z": 340.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab P1P",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab P1S",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab P2S",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 256.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab X1",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab X1 Carbon",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab X1E",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BBL",
+   "model": "Bambu Lab X2D",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 261.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BIQU",
+   "model": "BIQU B1",
+   "x": 235.0,
+   "y": 235.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BIQU",
+   "model": "BIQU BX",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "BIQU",
+   "model": "BIQU Hurakan",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Blocks",
+   "model": "BLOCKS Pro S100",
+   "x": 1000.0,
+   "y": 1000.0,
+   "z": 900.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Blocks",
+   "model": "BLOCKS RD50 V2",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Blocks",
+   "model": "BLOCKS RF50",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "CONSTRUCT3D",
+   "model": "Construct 1",
+   "x": 225.0,
+   "y": 260.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "CONSTRUCT3D",
+   "model": "Construct 1 XL",
+   "x": 325.0,
+   "y": 370.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Chuanying",
+   "model": "Chuanying X1",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Co Print",
+   "model": "Co Print ChromaSet",
+   "x": 290.0,
+   "y": 283.0,
+   "z": 330.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "CoLiDo",
+   "model": "CoLiDo 160 V2",
+   "x": 160.0,
+   "y": 160.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "CoLiDo",
+   "model": "CoLiDo DIY 4.0",
+   "x": 225.0,
+   "y": 220.0,
+   "z": 230.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "CoLiDo",
+   "model": "CoLiDo DIY 4.0 V2",
+   "x": 230.0,
+   "y": 230.0,
+   "z": 255.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "CoLiDo",
+   "model": "CoLiDo SR1",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 251.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "CoLiDo",
+   "model": "CoLiDo X16",
+   "x": 160.0,
+   "y": 160.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Comgrow",
+   "model": "Comgrow T300",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 350.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Comgrow",
+   "model": "Comgrow T500",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality CR-10 Max",
+   "x": 450.0,
+   "y": 450.0,
+   "z": 470.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality CR-10 SE",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 265.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality CR-10 V2",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality CR-10 V3",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality CR-6 Max",
+   "x": 390.0,
+   "y": 390.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality CR-6 SE",
+   "x": 225.0,
+   "y": 235.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality CR-M4",
+   "x": 450.0,
+   "y": 450.0,
+   "z": 470.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3 Pro",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3 S1",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3 S1 Plus",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3 S1 Pro",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3 V2",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3 V2 Neo",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3 V3",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3 V3 KE",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 245.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3 V3 Plus",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 330.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-3 V3 SE",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-5",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-5 Plus",
+   "x": 350.0,
+   "y": 350.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-5 Pro (2019)",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-5 S1",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-5S",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Ender-6",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Hi",
+   "x": 260.0,
+   "y": 260.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality K1",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality K1 Max",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality K1 SE",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality K1C",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality K2",
+   "x": 260.0,
+   "y": 260.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality K2 Plus",
+   "x": 350.0,
+   "y": 350.0,
+   "z": 350.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality K2 Pro",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Creality",
+   "model": "Creality Sermoon V1",
+   "x": 175.0,
+   "y": 175.0,
+   "z": 165.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Cubicon",
+   "model": "Cubicon xCeler-I",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 290.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Cubicon",
+   "model": "Cubicon xCeler-Mini",
+   "x": 150.0,
+   "y": 150.0,
+   "z": 150.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Cubicon",
+   "model": "Cubicon xCeler-Plus",
+   "x": 310.0,
+   "y": 310.0,
+   "z": 310.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Custom",
+   "model": "Generic Klipper Printer",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Custom",
+   "model": "Generic Marlin Printer",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Custom",
+   "model": "Generic RRF Printer",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Custom",
+   "model": "Generic Repetier Printer",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Custom",
+   "model": "Generic ToolChanger Printer",
+   "x": 350.0,
+   "y": 350.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "DeltaMaker",
+   "model": "DeltaMaker 2",
+   "x": 276.0,
+   "y": 240.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "DeltaMaker",
+   "model": "DeltaMaker 2T",
+   "x": 276.0,
+   "y": 240.0,
+   "z": 460.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "DeltaMaker",
+   "model": "DeltaMaker 2XT",
+   "x": 276.0,
+   "y": 240.0,
+   "z": 565.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Dremel",
+   "model": "Dremel 3D20",
+   "x": 230.0,
+   "y": 150.0,
+   "z": 140.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Dremel",
+   "model": "Dremel 3D40",
+   "x": 225.0,
+   "y": 155.0,
+   "z": 170.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Dremel",
+   "model": "Dremel 3D45",
+   "x": 225.0,
+   "y": 155.0,
+   "z": 170.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Eryone",
+   "model": "Thinker X400",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "FLSun",
+   "model": "FLSun Q5",
+   "x": 200.0,
+   "y": 200.0,
+   "z": 200.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "FLSun",
+   "model": "FLSun QQ-S Pro",
+   "x": 260.0,
+   "y": 260.0,
+   "z": 360.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "FLSun",
+   "model": "FLSun S1",
+   "x": 320.0,
+   "y": 320.0,
+   "z": 430.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "FLSun",
+   "model": "FLSun Super Racer (SR)",
+   "x": 270.0,
+   "y": 270.0,
+   "z": 330.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "FLSun",
+   "model": "FLSun T1",
+   "x": 260.0,
+   "y": 260.0,
+   "z": 330.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "FLSun",
+   "model": "FLSun V400",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 410.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge AD5X",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Adventurer 3 Series",
+   "x": 150.0,
+   "y": 150.0,
+   "z": 150.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Adventurer 4 Series",
+   "x": 220.0,
+   "y": 200.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Adventurer 5M",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Adventurer 5M Pro",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Adventurer A5",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Artemis",
+   "x": 190.0,
+   "y": 195.0,
+   "z": 200.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Creator 5",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 256.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Creator 5 Pro",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 256.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Guider 2s",
+   "x": 280.0,
+   "y": 250.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Guider 3 Ultra",
+   "x": 300.0,
+   "y": 330.0,
+   "z": 600.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Guider4",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Flashforge",
+   "model": "Flashforge Guider4 Pro",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "FlyingBear",
+   "model": "FlyingBear Ghost 6",
+   "x": 255.0,
+   "y": 210.0,
+   "z": 210.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "FlyingBear",
+   "model": "FlyingBear Reborn3",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 350.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Folgertech",
+   "model": "Folgertech FT-5",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Folgertech",
+   "model": "Folgertech FT-6",
+   "x": 700.0,
+   "y": 350.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Folgertech",
+   "model": "Folgertech i3",
+   "x": 200.0,
+   "y": 200.0,
+   "z": 175.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech A10 M",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech A10 Pro",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech A10 T",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech A20",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech A20 M",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech A20 T",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech A30 M",
+   "x": 320.0,
+   "y": 320.0,
+   "z": 420.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech A30 Pro",
+   "x": 320.0,
+   "y": 320.0,
+   "z": 420.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech A30 T",
+   "x": 320.0,
+   "y": 320.0,
+   "z": 420.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech M1",
+   "x": 105.0,
+   "y": 105.0,
+   "z": 95.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech Mizar",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech Mizar M",
+   "x": 255.0,
+   "y": 255.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech Mizar Max",
+   "x": 320.0,
+   "y": 320.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech Mizar Pro",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech Mizar S",
+   "x": 255.0,
+   "y": 255.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Geeetech",
+   "model": "Geeetech Thunder",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 260.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ginger Additive",
+   "model": "Ginger G1",
+   "x": 1000.0,
+   "y": 1000.0,
+   "z": 1000.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "InfiMech",
+   "model": "InfiMech TX",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Kingroon",
+   "model": "Kingroon KLP1",
+   "x": 230.0,
+   "y": 230.0,
+   "z": 210.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Kingroon",
+   "model": "Kingroon KP3S 3.0",
+   "x": 180.0,
+   "y": 180.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Kingroon",
+   "model": "Kingroon KP3S PRO S1",
+   "x": 200.0,
+   "y": 200.0,
+   "z": 200.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Kingroon",
+   "model": "Kingroon KP3S PRO V2",
+   "x": 205.0,
+   "y": 205.0,
+   "z": 200.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Kingroon",
+   "model": "Kingroon KP3S V1",
+   "x": 180.0,
+   "y": 180.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "LH",
+   "model": "LH Stinger",
+   "x": 200.0,
+   "y": 200.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "LH",
+   "model": "LH Stinger MMU",
+   "x": 200.0,
+   "y": 200.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "LONGER",
+   "model": "LONGER LK10",
+   "x": 225.0,
+   "y": 225.0,
+   "z": 265.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "LONGER",
+   "model": "LONGER LK10 Plus",
+   "x": 320.0,
+   "y": 320.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Lulzbot",
+   "model": "Lulzbot Mini 1",
+   "x": 154.0,
+   "y": 154.0,
+   "z": 158.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Lulzbot",
+   "model": "Lulzbot Taz 4 or 5",
+   "x": 280.0,
+   "y": 280.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Lulzbot",
+   "model": "Lulzbot Taz 6",
+   "x": 280.0,
+   "y": 280.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Lulzbot",
+   "model": "Lulzbot Taz Pro Dual",
+   "x": 280.0,
+   "y": 280.0,
+   "z": 280.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Lulzbot",
+   "model": "Lulzbot Taz Pro S",
+   "x": 280.0,
+   "y": 280.0,
+   "z": 280.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "M3D",
+   "model": "M3D Enabler D7500",
+   "x": 150.0,
+   "y": 150.0,
+   "z": 150.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "M3D",
+   "model": "M3D Enabler D8500",
+   "x": 210.0,
+   "y": 150.0,
+   "z": 150.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "MagicMaker",
+   "model": "MM BoneKing",
+   "x": 310.0,
+   "y": 306.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "MagicMaker",
+   "model": "MM hj SK",
+   "x": 220.0,
+   "y": 210.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "MagicMaker",
+   "model": "MM hqs SF",
+   "x": 220.0,
+   "y": 210.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "MagicMaker",
+   "model": "MM hqs hj",
+   "x": 220.0,
+   "y": 210.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "MagicMaker",
+   "model": "MM slb",
+   "x": 125.0,
+   "y": 125.0,
+   "z": 160.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Mellow",
+   "model": "M1",
+   "x": 106.0,
+   "y": 106.0,
+   "z": 100.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Meltingplot",
+   "model": "Meltingplot CHX 350",
+   "x": 880.0,
+   "y": 422.0,
+   "z": 943.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Meltingplot",
+   "model": "Meltingplot MBL 133",
+   "x": 835.0,
+   "y": 405.0,
+   "z": 394.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Meltingplot",
+   "model": "Meltingplot MBL 136",
+   "x": 850.0,
+   "y": 405.0,
+   "z": 396.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Meltingplot",
+   "model": "Meltingplot MBL 308",
+   "x": 850.0,
+   "y": 405.0,
+   "z": 896.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Meltingplot",
+   "model": "Meltingplot MBL 480",
+   "x": 850.0,
+   "y": 405.0,
+   "z": 1396.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "OpenEYE",
+   "model": "OpenEYE Peacock V2",
+   "x": 233.5,
+   "y": 228.0,
+   "z": 200.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "OrcaArena",
+   "model": "Orca Arena X1 Carbon",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Peopoly",
+   "model": "Peopoly Magneto X",
+   "x": 300.0,
+   "y": 400.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Phrozen",
+   "model": "Phrozen Arco",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Positron3D",
+   "model": "The Positron",
+   "x": 180.0,
+   "y": 180.0,
+   "z": 165.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Pragostroj",
+   "model": "KINARB 1HB",
+   "x": 600.0,
+   "y": 460.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Pragostroj",
+   "model": "KINARB 2HB",
+   "x": 540.0,
+   "y": 450.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa CORE One",
+   "x": 250.0,
+   "y": 220.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa CORE One HF",
+   "x": 250.0,
+   "y": 220.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa CORE One INDX 4T",
+   "x": 248.0,
+   "y": 205.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa CORE One INDX 8T",
+   "x": 248.0,
+   "y": 205.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa CORE One L",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 331.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa CORE One L HF",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 331.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa CORE One MMU3",
+   "x": 250.0,
+   "y": 220.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa MINI",
+   "x": 180.0,
+   "y": 180.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa MINI IS",
+   "x": 180.0,
+   "y": 180.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa MK3.5",
+   "x": 250.0,
+   "y": 210.0,
+   "z": 210.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa MK3S",
+   "x": 250.0,
+   "y": 210.0,
+   "z": 210.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa MK4",
+   "x": 250.0,
+   "y": 210.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa MK4 MMU3",
+   "x": 250.0,
+   "y": 210.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa MK4 MMU3 HF",
+   "x": 250.0,
+   "y": 210.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa MK4S",
+   "x": 250.0,
+   "y": 210.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa MK4S HF",
+   "x": 250.0,
+   "y": 210.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa XL",
+   "x": 360.0,
+   "y": 360.0,
+   "z": 360.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Prusa",
+   "model": "Prusa XL 5T",
+   "x": 360.0,
+   "y": 360.0,
+   "z": 360.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi Q1 Pro",
+   "x": 245.0,
+   "y": 245.0,
+   "z": 240.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi Q2",
+   "x": 270.0,
+   "y": 270.0,
+   "z": 256.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi Q2C",
+   "x": 270.0,
+   "y": 270.0,
+   "z": 256.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi X-CF Pro",
+   "x": 300.0,
+   "y": 250.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi X-Max",
+   "x": 300.0,
+   "y": 250.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi X-Max 3",
+   "x": 325.0,
+   "y": 325.0,
+   "z": 315.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi X-Max 4",
+   "x": 390.0,
+   "y": 390.0,
+   "z": 340.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi X-Plus",
+   "x": 270.0,
+   "y": 200.0,
+   "z": 200.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi X-Plus 3",
+   "x": 280.0,
+   "y": 280.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi X-Plus 4",
+   "x": 305.0,
+   "y": 305.0,
+   "z": 280.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi X-Plus 5",
+   "x": 320.0,
+   "y": 320.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Qidi",
+   "model": "Qidi X-Smart 3",
+   "x": 175.0,
+   "y": 180.0,
+   "z": 170.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "RH3D",
+   "model": "E3NG v1.2S",
+   "x": 232.0,
+   "y": 232.0,
+   "z": 245.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "RH3D",
+   "model": "VIRTU E3",
+   "x": 230.0,
+   "y": 232.0,
+   "z": 232.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Raise3D",
+   "model": "Raise3D Pro3",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Raise3D",
+   "model": "Raise3D Pro3 Plus",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 605.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Cast",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 3 200",
+   "x": 200.0,
+   "y": 200.0,
+   "z": 200.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 3 300",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 3 400",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 3 500",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 300",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 400",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 500",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 HYBRID 300",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 HYBRID 400",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 HYBRID 500",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 IDEX 300",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 IDEX 300 COPY MODE",
+   "x": 150.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 IDEX 300 MIRROR MODE",
+   "x": 120.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 IDEX 400",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 IDEX 400 COPY MODE",
+   "x": 200.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 IDEX 400 MIRROR MODE",
+   "x": 170.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 IDEX 500",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 IDEX 500 COPY MODE",
+   "x": 250.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Core 4 IDEX 500 MIRROR MODE",
+   "x": 220.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Ratrig",
+   "model": "RatRig V-Minion",
+   "x": 180.0,
+   "y": 180.0,
+   "z": 180.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "RolohaunDesign",
+   "model": "Rolohaun Delta Flyer Refit",
+   "x": 110.0,
+   "y": 110.0,
+   "z": 115.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "RolohaunDesign",
+   "model": "Rook MK1 LDO",
+   "x": 110.0,
+   "y": 110.0,
+   "z": 111.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "SecKit",
+   "model": "SecKit SK-Tank",
+   "x": 350.0,
+   "y": 350.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "SecKit",
+   "model": "Seckit Go3",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 275.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "SeeMeCNC",
+   "model": "SeeMeCNC Artemis 300",
+   "x": 290.0,
+   "y": 290.0,
+   "z": 500.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "SeeMeCNC",
+   "model": "SeeMeCNC BOSSdelta 300",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 495.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "SeeMeCNC",
+   "model": "SeeMeCNC BOSSdelta 500 0505",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "SeeMeCNC",
+   "model": "SeeMeCNC BOSSdelta 500 0510",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 1000.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "SeeMeCNC",
+   "model": "SeeMeCNC BOSSdelta 500 0521",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 2100.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "SeeMeCNC",
+   "model": "SeeMeCNC RostockMAX v3.2",
+   "x": 270.0,
+   "y": 270.0,
+   "z": 385.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "SeeMeCNC",
+   "model": "SeeMeCNC RostockMAX v4",
+   "x": 280.0,
+   "y": 280.0,
+   "z": 385.0,
+   "shape": "circle"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A250",
+   "x": 230.0,
+   "y": 250.0,
+   "z": 230.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A250 BKit",
+   "x": 230.0,
+   "y": 250.0,
+   "z": 224.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A250 Dual",
+   "x": 230.0,
+   "y": 250.0,
+   "z": 190.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A250 Dual BKit",
+   "x": 230.0,
+   "y": 250.0,
+   "z": 184.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A250 Dual QS+B Kit",
+   "x": 230.0,
+   "y": 250.0,
+   "z": 169.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A250 Dual QSKit",
+   "x": 230.0,
+   "y": 250.0,
+   "z": 175.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A250 QS+B Kit",
+   "x": 230.0,
+   "y": 250.0,
+   "z": 209.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A250 QSKit",
+   "x": 230.0,
+   "y": 250.0,
+   "z": 215.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A350",
+   "x": 320.0,
+   "y": 350.0,
+   "z": 325.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A350 BKit",
+   "x": 320.0,
+   "y": 350.0,
+   "z": 319.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A350 Dual",
+   "x": 320.0,
+   "y": 350.0,
+   "z": 285.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A350 Dual BKit",
+   "x": 320.0,
+   "y": 350.0,
+   "z": 279.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A350 Dual QS+B Kit",
+   "x": 320.0,
+   "y": 350.0,
+   "z": 264.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A350 Dual QSKit",
+   "x": 320.0,
+   "y": 350.0,
+   "z": 270.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A350 QS+B Kit",
+   "x": 320.0,
+   "y": 350.0,
+   "z": 304.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker A350 QSKit",
+   "x": 320.0,
+   "y": 350.0,
+   "z": 310.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker Artisan",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker J1",
+   "x": 324.0,
+   "y": 200.0,
+   "z": 200.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Snapmaker",
+   "model": "Snapmaker U1",
+   "x": 270.0,
+   "y": 270.0,
+   "z": 270.1,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV01",
+   "x": 280.0,
+   "y": 240.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV01 Pro",
+   "x": 280.0,
+   "y": 240.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV02",
+   "x": 280.0,
+   "y": 240.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV05",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV06",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV06 ACE",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV06 Plus",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 340.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV06 Plus ACE",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 350.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV07",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV07 Plus",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 350.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV08",
+   "x": 350.0,
+   "y": 350.0,
+   "z": 345.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol SV08 MAX",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Sovol",
+   "model": "Sovol Zero",
+   "x": 152.4,
+   "y": 152.4,
+   "z": 152.4,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Tiertime",
+   "model": "Tiertime UP300 HS",
+   "x": 207.0,
+   "y": 255.0,
+   "z": 230.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Tiertime",
+   "model": "Tiertime UP310 Pro",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Tiertime",
+   "model": "Tiertime UP400 Pro",
+   "x": 400.0,
+   "y": 350.0,
+   "z": 380.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Tiertime",
+   "model": "Tiertime UP600 HS",
+   "x": 500.0,
+   "y": 400.0,
+   "z": 600.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Tronxy",
+   "model": "Tronxy X5SA 400 Marlin Firmware",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "TwoTrees",
+   "model": "TwoTrees SK1",
+   "x": 256.0,
+   "y": 256.0,
+   "z": 256.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "TwoTrees",
+   "model": "TwoTrees SP-5 Klipper",
+   "x": 310.0,
+   "y": 310.0,
+   "z": 350.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "UltiMaker",
+   "model": "UltiMaker 2",
+   "x": 223.0,
+   "y": 223.0,
+   "z": 205.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "UltiMaker",
+   "model": "UltiMaker 2 extended+",
+   "x": 223.0,
+   "y": 223.0,
+   "z": 305.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "UltiMaker",
+   "model": "UltiMaker 2+",
+   "x": 223.0,
+   "y": 223.0,
+   "z": 205.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "UltiMaker",
+   "model": "UltiMaker S5",
+   "x": 330.0,
+   "y": 240.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Vivedino",
+   "model": "Troodon 2.0 - Klipper",
+   "x": 350.0,
+   "y": 350.0,
+   "z": 330.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Vivedino",
+   "model": "Troodon 2.0 - RRF",
+   "x": 350.0,
+   "y": 350.0,
+   "z": 330.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "EXO42",
+   "x": 420.0,
+   "y": 420.0,
+   "z": 420.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "EXO42 IDRE",
+   "x": 219.0,
+   "y": 420.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "EXO42 Performance",
+   "x": 420.0,
+   "y": 420.0,
+   "z": 420.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "EXO42 Stage 2",
+   "x": 420.0,
+   "y": 420.0,
+   "z": 420.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "EXO65",
+   "x": 650.0,
+   "y": 650.0,
+   "z": 650.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "EXO65 IDRE",
+   "x": 602.0,
+   "y": 650.0,
+   "z": 630.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "EXO65 Performance",
+   "x": 650.0,
+   "y": 650.0,
+   "z": 650.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "EXO65 Stage 2",
+   "x": 650.0,
+   "y": 650.0,
+   "z": 650.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "SH65",
+   "x": 650.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "SH65 IDRE",
+   "x": 602.0,
+   "y": 300.0,
+   "z": 280.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "SH65 Performance",
+   "x": 650.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "SH65 Stage 2",
+   "x": 650.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "VS20MK2",
+   "x": 200.0,
+   "y": 200.0,
+   "z": 220.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "VS30MK2",
+   "x": 300.0,
+   "y": 200.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "VS30MK3",
+   "x": 300.0,
+   "y": 200.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "VS30MK3 Stage 2",
+   "x": 300.0,
+   "y": 200.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "VS30SC",
+   "x": 300.0,
+   "y": 200.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "VS30SC2",
+   "x": 300.0,
+   "y": 200.0,
+   "z": 310.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "VS30SC2 Performance",
+   "x": 300.0,
+   "y": 200.0,
+   "z": 310.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "VS30SC2 Stage 2",
+   "x": 300.0,
+   "y": 200.0,
+   "z": 310.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Volumic",
+   "model": "VS30ULTRA",
+   "x": 290.0,
+   "y": 200.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Voron",
+   "model": "Voron 0.1",
+   "x": 120.0,
+   "y": 120.0,
+   "z": 120.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Voron",
+   "model": "Voron 2.4 250",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 225.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Voron",
+   "model": "Voron 2.4 300",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 275.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Voron",
+   "model": "Voron 2.4 350",
+   "x": 350.0,
+   "y": 350.0,
+   "z": 325.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Voron",
+   "model": "Voron Switchwire 250",
+   "x": 250.0,
+   "y": 210.0,
+   "z": 240.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Voron",
+   "model": "Voron Trident 250",
+   "x": 250.0,
+   "y": 250.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Voron",
+   "model": "Voron Trident 300",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Voron",
+   "model": "Voron Trident 350",
+   "x": 350.0,
+   "y": 350.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Voxelab",
+   "model": "Voxelab Aquila X2",
+   "x": 220.0,
+   "y": 220.0,
+   "z": 250.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Vzbot",
+   "model": "Vzbot 235 AWD",
+   "x": 235.0,
+   "y": 235.0,
+   "z": 200.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Vzbot",
+   "model": "Vzbot 330 AWD",
+   "x": 330.0,
+   "y": 330.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "WEMAKE3D",
+   "model": "WEMAKE3D PhoenixProV1",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "WEMAKE3D",
+   "model": "WEMAKE3D TinyBotV1",
+   "x": 210.0,
+   "y": 210.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D12-300",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-300 MK1",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-300 MK1 BLTouch kit",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-300 MK2",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-300 MK3",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-400 MK1",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-400 MK1 BLTouch kit",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-400 MK2",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-400 MK3",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-500 MK1",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-500 MK1 BLTouch kit",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-500 MK2",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao",
+   "model": "Wanhao D9-500 MK3",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 230 PRO M2 DIRECT",
+   "x": 230.0,
+   "y": 230.0,
+   "z": 240.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 230 PRO M2 MONO DUAL",
+   "x": 230.0,
+   "y": 230.0,
+   "z": 240.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 230 PRO M2 MONO DUAL PoopTool",
+   "x": 230.0,
+   "y": 230.0,
+   "z": 240.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 230 PRO SMARTPAD DIRECT",
+   "x": 230.0,
+   "y": 230.0,
+   "z": 240.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 230 PRO SMARTPAD MONO DUAL",
+   "x": 230.0,
+   "y": 230.0,
+   "z": 240.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 230 PRO SMARTPAD MONO DUAL PoopTool",
+   "x": 230.0,
+   "y": 230.0,
+   "z": 240.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 300 PRO M2 DIRECT",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 300 PRO M2 MONO DUAL",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 300 PRO M2 MONO DUAL PoopTool",
+   "x": 310.0,
+   "y": 310.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 300 PRO SMARTPAD DIRECT",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 300 PRO SMARTPAD MONO DUAL",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 300 PRO SMARTPAD MONO DUAL PoopTool",
+   "x": 310.0,
+   "y": 310.0,
+   "z": 400.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 500 PRO M2 MONO DUAL",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 500 PRO M2 MONO DUAL PoopTool",
+   "x": 510.0,
+   "y": 510.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 500 PRO SMARTPAD DIRECT",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 500 PRO SMARTPAD MONO DUAL",
+   "x": 500.0,
+   "y": 500.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Wanhao France",
+   "model": "D12 500 PRO SMARTPAD MONO DUAL PoopTool",
+   "x": 510.0,
+   "y": 510.0,
+   "z": 500.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "WonderMaker",
+   "model": "WonderMaker ZR",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "WonderMaker",
+   "model": "WonderMaker ZR Ultra",
+   "x": 300.0,
+   "y": 270.0,
+   "z": 290.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "WonderMaker",
+   "model": "WonderMaker ZR Ultra S",
+   "x": 300.0,
+   "y": 270.0,
+   "z": 290.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Z-Bolt",
+   "model": "Z-Bolt S1000",
+   "x": 1000.0,
+   "y": 1000.0,
+   "z": 1000.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Z-Bolt",
+   "model": "Z-Bolt S1000 Dual",
+   "x": 1000.0,
+   "y": 1000.0,
+   "z": 1000.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Z-Bolt",
+   "model": "Z-Bolt S300",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 350.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Z-Bolt",
+   "model": "Z-Bolt S300 Dual",
+   "x": 300.0,
+   "y": 300.0,
+   "z": 350.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Z-Bolt",
+   "model": "Z-Bolt S400",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 700.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Z-Bolt",
+   "model": "Z-Bolt S400 Dual",
+   "x": 400.0,
+   "y": 400.0,
+   "z": 700.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Z-Bolt",
+   "model": "Z-Bolt S600",
+   "x": 600.0,
+   "y": 600.0,
+   "z": 900.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Z-Bolt",
+   "model": "Z-Bolt S600 Dual",
+   "x": 600.0,
+   "y": 600.0,
+   "z": 900.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "Z-Bolt",
+   "model": "Z-Bolt S800 Dual",
+   "x": 802.0,
+   "y": 802.0,
+   "z": 802.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "iQ",
+   "model": "TiQ2",
+   "x": 330.0,
+   "y": 330.0,
+   "z": 300.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "iQ",
+   "model": "TiQ8",
+   "x": 500.0,
+   "y": 400.0,
+   "z": 450.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "re3D",
+   "model": "re3D Gigabot 4",
+   "x": 590.0,
+   "y": 600.0,
+   "z": 600.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "re3D",
+   "model": "re3D Gigabot 4 XLT",
+   "x": 590.0,
+   "y": 760.0,
+   "z": 900.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "re3D",
+   "model": "re3D GigabotX 2",
+   "x": 552.0,
+   "y": 593.0,
+   "z": 470.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "re3D",
+   "model": "re3D GigabotX 2 XLT",
+   "x": 552.0,
+   "y": 740.0,
+   "z": 470.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "re3D",
+   "model": "re3D Terabot 4",
+   "x": 915.0,
+   "y": 915.0,
+   "z": 1000.0,
+   "shape": "rect"
+  },
+  {
+   "vendor": "re3D",
+   "model": "re3D TerabotX 2",
+   "x": 892.0,
+   "y": 908.0,
+   "z": 870.0,
+   "shape": "rect"
+  }
+ ]
+}

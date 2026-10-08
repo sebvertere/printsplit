@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PrintSplit</title>
+<style>
+:root{--bg:#14161b;--panel:#1d2027;--panel2:#262a33;--line:#333845;--tx:#e8eaf0;--mut:#8f97a8;--acc:#6aa9ff;--ok:#5ec27f;--warn:#f0b35a}
+*{box-sizing:border-box}body{margin:0;height:100vh;display:flex;background:var(--bg);color:var(--tx);font:14px/1.4 system-ui,sans-serif}
+#side{width:390px;min-width:340px;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;padding:16px}
+#view{flex:1;position:relative;min-width:0}#view canvas{display:block}
+h1{font-size:18px;margin:0 0 2px}h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:20px 0 8px;display:flex;align-items:center;gap:8px}
+h3 .n{background:var(--panel2);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;color:var(--tx)}
+.sub{color:var(--mut);font-size:12px}
+#drop{border:2px dashed var(--line);border-radius:10px;padding:22px;text-align:center;cursor:pointer;color:var(--mut)}
+#drop.over,#drop:hover{border-color:var(--acc);color:var(--tx)}
+input[type=text],input[type=number],select{background:var(--bg);color:var(--tx);border:1px solid var(--line);border-radius:6px;padding:7px 9px;width:100%;font:inherit}
+input:focus{outline:1px solid var(--acc)}
+label.chk{display:flex;gap:8px;align-items:flex-start;padding:10px;background:var(--panel2);border:1px solid var(--line);border-radius:8px;cursor:pointer}
+label.chk input{margin-top:3px}
+#results{position:relative}#drop-list{position:absolute;left:0;right:0;top:100%;z-index:5;max-height:260px;overflow-y:auto;background:var(--panel2);border:1px solid var(--line);border-radius:6px;margin-top:3px;display:none;box-shadow:0 8px 24px #0008}
+.opt{padding:7px 10px;cursor:pointer;display:flex;justify-content:space-between;gap:8px}.opt:hover,.opt.hl{background:#34394a}.opt small{color:var(--mut);white-space:nowrap}
+.card{display:flex;align-items:center;gap:8px;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin:6px 0}
+.card .nm{flex:1;min-width:0}.card .nm b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.step{display:flex;align-items:center;gap:4px}.step button{width:26px;height:26px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--tx);cursor:pointer;font-size:15px}
+.step span{min-width:22px;text-align:center}.x{background:none;border:0;color:var(--mut);cursor:pointer;font-size:16px}
+button.go{width:100%;margin-top:14px;padding:12px;border:0;border-radius:8px;background:var(--acc);color:#06121f;font:600 15px system-ui;cursor:pointer}
+button.go:disabled{opacity:.4;cursor:not-allowed}button.sec{padding:8px 12px;border-radius:6px;border:1px solid var(--line);background:var(--panel2);color:var(--tx);cursor:pointer}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.grid label{font-size:12px;color:var(--mut)}
+details{margin-top:12px}.grp{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin:14px 0 6px;border-top:1px solid var(--line);padding-top:10px}.cutrow{display:flex;gap:6px;align-items:center;margin:6px 0}.cutrow select{width:56px}.cutrow input[type=number]{width:84px}.cutrow input[type=range]{flex:1;min-width:0}summary{cursor:pointer;color:var(--mut);font-size:12px}
+.pill{display:inline-block;padding:1px 7px;border-radius:10px;font-size:11px;background:var(--panel2);border:1px solid var(--line);color:var(--mut)}
+.warn{color:var(--warn)}.ok{color:var(--ok)}
+#hud{position:absolute;top:12px;left:12px;right:12px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#14161bcc;backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13px}
+#hud input[type=range]{width:120px}#spin{display:none;position:absolute;inset:0;background:#14161bcc;align-items:center;justify-content:center;font-size:16px;z-index:9}
+.part{padding:7px 8px;border-radius:6px;cursor:pointer;font-size:12px;margin:2px 0}.part:hover,.part.sel{background:var(--panel2)}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px}
+pre{white-space:pre-wrap;font-size:11px;color:var(--mut);max-height:140px;overflow:auto;background:var(--bg);padding:8px;border-radius:6px}
+</style></head><body>
+<div id="side">
+  <h1>PrintSplit</h1><div class="sub">Split a big model to fit the printers you actually have.</div>
+
+  <h3><span class="n">1</span>Your model</h3>
+  <div id="drop">Drop an STL / OBJ / 3MF / GLB here<br><small>or click to choose a file</small></div>
+  <input id="file" type="file" accept=".stl,.obj,.3mf,.glb,.gltf,.ply,.off" hidden>
+  <div id="minfo" class="sub" style="margin-top:8px"></div>
+  <div id="sizeline" class="sub" style="margin-top:4px"></div>
+
+  <h3><span class="n">2</span>Your printers</h3>
+  <label class="chk"><input type="checkbox" id="single"><span><b>I only have one printer</b><br><span class="sub">One machine, printed one part after another over several days. Every part must fit its single build volume.</span></span></label>
+  <div id="results" style="margin-top:10px"><input type="text" id="q" placeholder="Search printers… try “pru”, “bambu a1”, “ender”" autocomplete="off"><div id="drop-list"></div></div>
+  <div id="fleet"></div>
+  <details><summary>Printer not listed? Add a custom volume</summary>
+    <div class="grid" style="margin-top:8px"><div><label>Name</label><input type="text" id="cn" value="My printer"></div><div></div>
+      <div><label>X mm</label><input type="number" id="cx" value="300"></div><div><label>Y mm</label><input type="number" id="cy" value="300"></div>
+      <div><label>Z mm</label><input type="number" id="cz" value="400"></div><div style="align-self:end"><button class="sec" id="cadd" style="width:100%">Add</button></div></div>
+  </details>
+
+  <h3><span class="n">3</span>Split</h3>
+  <details id="adv"><summary>Advanced settings</summary>
+    <div class="grp">Model units &amp; orientation</div>
+    <div class="grid">
+      <div><label>Real-world height (mm)</label><input id="height" type="number" placeholder="e.g. 1650"></div>
+      <div><label>Or scale factor</label><input id="scale" type="number" value="1" step="any"></div>
+      <div><label>Model up axis</label><select id="up"><option value="z">Z up</option><option value="y">Y up (OBJ/glTF)</option><option value="-y">−Y up</option></select></div>
+      <div><label>Size after scaling</label><div id="size" style="padding:7px 0">–</div></div>
+    </div>
+    <div class="grp">Seams &amp; dowels</div>
+    <div class="grid">
+      <div><label>Dowel Ø (mm)</label><input id="dd" type="number" value="8"></div><div><label>Dowel length (mm)</label><input id="dl" type="number" value="20"></div>
+      <div><label>Bed margin / side (mm)</label><input id="mg" type="number" value="3"></div><div><label>Seam preference</label><input id="sw" type="number" value="1.5" step="0.1"></div>
+    </div>
+    <label class="chk" style="margin-top:8px"><input type="checkbox" id="conn" checked><span>Add dowel sockets on seams</span></label>
+    <label class="chk" style="margin-top:6px"><input type="checkbox" id="bal"><span>Balance work across all printers<br><span class="sub">May add extra cuts so every printer gets parts</span></span></label>
+    <div class="grp">Print orientation</div>
+    <label class="chk"><input type="checkbox" id="smart" checked><span>Suggest a print orientation per part<br><span class="sub">Picks the side that minimises overhangs and puts flat cut faces on the bed. Hints only — your slicer has the final say.</span></span></label>
+    <div class="grp">Manual cut planes</div>
+    <div class="sub">Force a cut at an exact spot (applied before the automatic cuts). The plane shows live in the 3D view.</div>
+    <div id="cuts"></div><button class="sec" id="addcut" style="margin-top:6px">+ Add cut plane</button>
+  </details>
+  <button class="go" id="run" disabled>Plan the split</button>
+  <div id="err" class="warn" style="margin-top:8px"></div>
+  <div id="out"></div>
+</div>
+
+<div id="view">
+  <div id="hud" style="display:none">
+    <label><input type="checkbox" id="boxes" checked> Printer volumes</label>
+    <label><input type="checkbox" id="parts" checked> Parts</label>
+    <label>Explode <input type="range" id="ex" min="0" max="1" step=".01" value=".3"></label>
+    <span id="sumline" class="sub"></span>
+  </div>
+  <div id="spin">Working…</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+let manual=[],modelExt=[1000,1000,1000],planes=new THREE.Group(),DB=[],SID=null,fleet=[],group=new THREE.Group(),lastPlan=null,ctr=new THREE.Vector3(),sz=1000;
+
+// ---------- 3D ----------
+const view=$('view');
+const R=new THREE.WebGLRenderer({antialias:true});view.prepend(R.domElement);
+const S=new THREE.Scene();S.background=new THREE.Color(0x14161b);
+const C=new THREE.PerspectiveCamera(40,1,1,1e6);C.up.set(0,0,1);
+S.add(new THREE.HemisphereLight(0xffffff,0x445,.9));const dl=new THREE.DirectionalLight(0xffffff,.8);dl.position.set(1,-2,3);S.add(dl);S.add(group);S.add(planes);
+const O=new THREE.OrbitControls(C,R.domElement);
+function resize(){const w=view.clientWidth,h=view.clientHeight;R.setSize(w,h);C.aspect=w/h;C.updateProjectionMatrix()}
+addEventListener('resize',resize);resize();
+(function loop(){requestAnimationFrame(loop);R.render(S,C)})();
+function geom(b64){const s=atob(b64),u=new Uint8Array(s.length);for(let i=0;i<s.length;i++)u[i]=s.charCodeAt(i);
+  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(u.buffer),3));g.computeVertexNormals();g.computeBoundingBox();return g}
+function clearScene(){while(group.children.length){const c=group.children.pop();c.traverse&&c.traverse(o=>{o.geometry&&o.geometry.dispose()})}}
+function frame(box){box.getCenter(ctr);const s=new THREE.Vector3();box.getSize(s);sz=Math.max(s.x,s.y,s.z);
+  C.position.set(ctr.x+sz*.9,ctr.y-sz*1.5,ctr.z+sz*.6);C.far=sz*50;C.updateProjectionMatrix();O.target.copy(ctr);O.update()}
+function showPreview(b64){clearScene();lastPlan=null;$('hud').style.display='none';
+  const g=geom(b64),m=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:0x9aa4b8,roughness:.6}));group.add(m);frame(g.boundingBox)}
+const items=[];
+function showPlan(plan){clearScene();items.length=0;const all=new THREE.Box3();
+  plan.parts.forEach((p,i)=>{
+    const g=geom(p.pos),mesh=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:p.color,roughness:.6,metalness:.1,transparent:true}));
+    const grp=new THREE.Group();grp.add(mesh);
+    const [a,b]=p.box,bx=new THREE.Box3(new THREE.Vector3(...a),new THREE.Vector3(...b));
+    const sz3=new THREE.Vector3();bx.getSize(sz3);const c3=new THREE.Vector3();bx.getCenter(c3);
+    const lines=new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(sz3.x,sz3.y,sz3.z)),new THREE.LineBasicMaterial({color:p.color,transparent:true,opacity:.9}));
+    lines.position.copy(c3);grp.add(lines);
+    const c=new THREE.Vector3();g.boundingBox.getCenter(c);grp.userData={c,mesh,lines,i};group.add(grp);items.push(grp);all.union(g.boundingBox)});
+  frame(all);explode();$('hud').style.display='flex'}
+function explode(){const k=+$('ex').value;planes.visible=!items.length||k<.02;items.forEach(g=>g.position.copy(g.userData.c).sub(ctr).multiplyScalar(k))}
+$('ex').oninput=explode;
+$('boxes').onchange=()=>items.forEach(g=>g.userData.lines.visible=$('boxes').checked);
+$('parts').onchange=()=>items.forEach(g=>g.userData.mesh.visible=$('parts').checked);
+let selected=null;
+function select(i,force){if(i!=null&&i===selected&&!force)i=null;selected=i;items.forEach((g,j)=>{g.userData.mesh.material.opacity=(i==null||i==j)?1:.12;g.userData.lines.material.opacity=(i==null||i==j)?.9:.2});
+  document.querySelectorAll('.part').forEach(e=>e.classList.toggle('sel',+e.dataset.i===i))}
+let down=null;const ray=new THREE.Raycaster(),mp=new THREE.Vector2();
+R.domElement.addEventListener('pointerdown',e=>{down=[e.clientX,e.clientY]});
+R.domElement.addEventListener('pointerup',e=>{if(!down||!items.length||Math.hypot(e.clientX-down[0],e.clientY-down[1])>4)return;
+  const r=R.domElement.getBoundingClientRect();mp.set((e.clientX-r.left)/r.width*2-1,-((e.clientY-r.top)/r.height)*2+1);ray.setFromCamera(mp,C);
+  const hit=ray.intersectObjects(items.map(g=>g.userData.mesh).filter(m=>m.visible))[0];
+  if(hit){select(hit.object.parent.userData.i)}else select(null,true);down=null});
+document.addEventListener('click',e=>{if(selected!=null&&!e.target.closest('.part')&&e.target!==R.domElement)select(null)});
+
+// ---------- model upload ----------
+const drop=$('drop'),fi=$('file');
+drop.onclick=()=>fi.click();
+['dragenter','dragover'].forEach(e=>drop.addEventListener(e,ev=>{ev.preventDefault();drop.classList.add('over')}));
+['dragleave','drop'].forEach(e=>drop.addEventListener(e,ev=>{ev.preventDefault();drop.classList.remove('over')}));
+drop.addEventListener('drop',ev=>upload(ev.dataTransfer.files[0]));fi.onchange=()=>upload(fi.files[0]);
+const busy=(on,t)=>{$('spin').style.display=on?'flex':'none';if(t)$('spin').textContent=t};
+async function api(path,body,raw){const r=await fetch(path,{method:'POST',body:raw?body:JSON.stringify(body)});const j=await r.json();if(!r.ok)throw new Error(j.error||r.statusText);return j}
+async function upload(f){if(!f)return;$('err').textContent='';busy(true,'Reading '+f.name+'…');
+  try{const j=await api('/api/upload?name='+encodeURIComponent(f.name),await f.arrayBuffer(),true);SID=j.id;
+    $('up').value=j.guess_up;
+    const e=j.extents;const mx=Math.max(...e);
+    $('minfo').innerHTML=`<b>${j.name}</b> · ${j.faces.toLocaleString()} faces · ${j.bodies} bod${j.bodies==1?'y':'ies'} · `+(j.watertight?'<span class=ok>watertight</span>':'<span class=warn>not watertight (will try to repair)</span>')
+      +`<br>Raw size ${e.map(v=>v.toFixed(1)).join(' × ')} units`+(mx<20?'<br><span class=warn>Units look off (metres or arbitrary). <a href="#" id="openadv" style="color:var(--acc)">Set the real height in Advanced</a></span>':'');
+    $('scale').value=1;$('height').value='';$('cuts').innerHTML='';manual=[];await refreshPreview();checkRun()}
+  catch(e){$('err').textContent=e.message}busy(false)}
+let pt=null;function opts(){return{id:SID,scale:$('scale').value,height:$('height').value,up:$('up').value}}
+async function refreshPreview(){if(!SID)return;busy(true,'Updating preview…');
+  try{const j=await api('/api/preview',opts());showPreview(j.pos);modelExt=j.extents;const t=j.extents.map(v=>v.toFixed(0)).join(' × ')+' mm';$('size').textContent=t;$('sizeline').textContent='Size: '+t;drawPlanes()}catch(e){$('err').textContent=e.message}busy(false)}
+['height','scale','up'].forEach(id=>$(id).addEventListener('change',()=>{if(id==='height'&&$('height').value)$('scale').value=1;refreshPreview()}));
+
+// ---------- printer picker ----------
+fetch('/api/printers').then(r=>r.json()).then(d=>{DB=d});
+const q=$('q'),dl_=$('drop-list');let hl=-1,cur=[];
+function renderList(){const t=q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  if(!t.length){dl_.style.display='none';return}
+  cur=DB.filter(p=>t.every(w=>(p.vendor+' '+p.model).toLowerCase().includes(w))).sort((a,b)=>b.x*b.y*b.z-a.x*a.y*a.z).slice(0,60);
+  dl_.innerHTML=cur.length?cur.map((p,i)=>`<div class="opt" data-i="${i}"><span>${p.model}</span><small>${p.x|0}×${p.y|0}×${p.z|0}</small></div>`).join(''):'<div class="opt"><span class="sub">No match</span></div>';
+  dl_.style.display='block';hl=-1}
+q.oninput=renderList;q.onfocus=renderList;
+q.onkeydown=e=>{const n=dl_.querySelectorAll('.opt[data-i]');if(e.key==='ArrowDown'){hl=Math.min(hl+1,n.length-1)}else if(e.key==='ArrowUp'){hl=Math.max(hl-1,0)}else if(e.key==='Enter'){add(cur[Math.max(hl,0)]);return}else return;e.preventDefault();n.forEach((x,i)=>x.classList.toggle('hl',i===hl))};
+dl_.onmousedown=e=>{const o=e.target.closest('.opt[data-i]');if(o){e.preventDefault();add(cur[+o.dataset.i])}};
+document.addEventListener('click',e=>{if(!$('results').contains(e.target))dl_.style.display='none'});
+function add(p){if(!p)return;if($('single').checked)fleet=[];
+  const ex=fleet.find(f=>f.name===p.model);if(ex)ex.qty++;else fleet.push({name:p.model,x:p.x,y:p.y,z:p.z,shape:p.shape||'rect',qty:1});
+  q.value='';dl_.style.display='none';drawFleet()}
+$('cadd').onclick=()=>{if($('single').checked)fleet=[];fleet.push({name:$('cn').value||'Custom',x:+$('cx').value,y:+$('cy').value,z:+$('cz').value,shape:'rect',qty:1});drawFleet()};
+function drawFleet(){const one=$('single').checked;if(one&&fleet.length>1)fleet=fleet.slice(-1);if(one&&fleet[0])fleet[0].qty=1;
+  $('fleet').innerHTML=fleet.length?fleet.map((f,i)=>`<div class="card"><div class="nm"><b>${f.name}</b><span class="sub">${f.x|0} × ${f.y|0} × ${f.z|0} mm${f.shape==='circle'?' · round bed':''}</span></div>
+    ${one?'<span class="pill">1 machine</span>':`<div class="step"><button data-a="-" data-i="${i}">−</button><span>${f.qty}</span><button data-a="+" data-i="${i}">+</button></div>`}
+    <button class="x" data-a="x" data-i="${i}" title="Remove">✕</button></div>`).join(''):'<div class="sub" style="margin:8px 0">No printers yet — search above.</div>';
+  checkRun()}
+$('fleet').onclick=e=>{const b=e.target.closest('button');if(!b)return;const i=+b.dataset.i,a=b.dataset.a;
+  if(a==='+')fleet[i].qty++;else if(a==='-')fleet[i].qty=Math.max(1,fleet[i].qty-1);else fleet.splice(i,1);drawFleet()};
+$('single').onchange=()=>{$('bal').disabled=$('single').checked;drawFleet()};
+function checkRun(){$('run').disabled=!(SID&&fleet.length)}
+drawFleet();
+
+// ---------- manual cut planes ----------
+const AX='xyz';
+function drawPlanes(){while(planes.children.length)planes.children.pop();
+  manual.forEach(c=>{const i=AX.indexOf(c.axis),e=modelExt,o=[0,1,2].filter(k=>k!==i);
+    const w=e[o[0]]*1.15,h=e[o[1]]*1.15,g=new THREE.PlaneGeometry(w,h),m=new THREE.Mesh(g,new THREE.MeshBasicMaterial({color:0xff5577,transparent:true,opacity:.22,side:THREE.DoubleSide,depthWrite:false}));
+    const ed=new THREE.LineSegments(new THREE.EdgesGeometry(g),new THREE.LineBasicMaterial({color:0xff5577}));m.add(ed);
+    const pos=[e[0]/2,e[1]/2,e[2]/2];pos[i]=c.pos;m.position.set(...pos);
+    if(i===0)m.rotation.y=Math.PI/2;else if(i===1)m.rotation.x=Math.PI/2;planes.add(m)});
+  planes.visible=!items.length||+$('ex').value<.02}
+function drawCuts(){$('cuts').innerHTML=manual.map((c,i)=>{const mx=modelExt[AX.indexOf(c.axis)];return `<div class="cutrow"><select data-i="${i}" data-f="axis">${['x','y','z'].map(a=>`<option ${a===c.axis?'selected':''}>${a.toUpperCase()}</option>`).join('')}</select>
+    <input type="range" min="0" max="${mx}" step="1" value="${c.pos}" data-i="${i}" data-f="pos"><input type="number" value="${Math.round(c.pos)}" data-i="${i}" data-f="posn"><button class="x" data-i="${i}" data-f="del">✕</button></div>`}).join('');drawPlanes()}
+$('addcut').onclick=()=>{manual.push({axis:'z',pos:Math.round(modelExt[2]/2)});drawCuts()};
+$('cuts').addEventListener('input',e=>{const t=e.target,i=+t.dataset.i,f=t.dataset.f;if(f==='pos'||f==='posn'){manual[i].pos=+t.value;const sib=t.parentNode.querySelector(f==='pos'?'input[type=number]':'input[type=range]');sib.value=t.value;drawPlanes()}});
+$('cuts').addEventListener('change',e=>{const t=e.target,i=+t.dataset.i;if(t.dataset.f==='axis'){manual[i].axis=t.value.toLowerCase();manual[i].pos=Math.round(modelExt[AX.indexOf(manual[i].axis)]/2);drawCuts()}});
+$('cuts').addEventListener('click',e=>{const b=e.target.closest('button');if(b&&b.dataset.f==='del'){manual.splice(+b.dataset.i,1);drawCuts()}});
+document.addEventListener('click',e=>{if(e.target.id==='openadv'){e.preventDefault();$('adv').open=true;$('height').focus()}});
+
+// ---------- plan ----------
+$('run').onclick=async()=>{$('err').textContent='';$('out').innerHTML='';busy(true,'Planning cuts and building dowel sockets… (can take a minute for dense meshes)');
+  try{const p=await api('/api/plan',{...opts(),fleet,single:$('single').checked,params:{manual_cuts:manual,smart_orient:$('smart').checked,margin:$('mg').value,dowel_d:$('dd').value,dowel_length:$('dl').value,seam_weight:$('sw').value,connectors:$('conn').checked,balance:$('bal').checked}});
+    lastPlan=p;showPlan(p);renderResults(p)}catch(e){$('err').textContent=e.message}busy(false)};
+function renderResults(p){const by={};p.parts.forEach(x=>(by[x.printer]=by[x.printer]||[]).push(x));
+  $('sumline').textContent=`${p.parts.length} parts · ${p.cuts.length} cuts · ${p.dowels} dowels`;
+  $('out').innerHTML=`<h3>Result</h3><div>${p.parts.length} parts, ${p.cuts.length} cuts, <b>${p.dowels}</b> dowels (print one dowel_x1.stl × ${p.dowels}).</div>`
+   +(p.oversize.length?`<div class="warn">${p.oversize.length} part(s) still too big — add a printer or lower the seam preference.</div>`:'')
+   +`<a href="/api/download?id=${SID}"><button class="go" style="margin-top:10px">Download STLs + plan (.zip)</button></a>`
+   +Object.entries(by).map(([k,v])=>`<h3>${k} <span class="pill">${v.length} parts · ${v.reduce((s,x)=>s+x.cm3,0).toFixed(0)} cm³</span></h3>`+v.map(x=>`<div class="part" data-i="${p.parts.indexOf(x)}"><span class="sw" style="background:${x.color}"></span><b>${x.id}</b> · ${x.extents.join(' × ')} mm · print ${x.up}-up<br><span class="sub">${x.cm3} cm³${x.hint?' · '+x.hint:''}</span></div>`).join('')).join('')
+   +(p.log.length?`<details><summary>Cut log</summary><pre>${p.log.join('\n')}</pre></details>`:'')}
+$('out').onclick=e=>{const d=e.target.closest('.part');if(d)select(+d.dataset.i)};
+</script></body></html>

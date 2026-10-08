@@ -1,0 +1,8 @@
+{
+  "name": "PrintSplit",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "pip install -e '.[dev]'",
+  "postAttachCommand": "python -m printsplit serve --no-browser",
+  "forwardPorts": [8765],
+  "portsAttributes": { "8765": { "label": "PrintSplit", "onAutoForward": "openBrowser" } }
+}
