@@ -2,7 +2,7 @@
 
 PrintSplit is a small, hackable tool — improvements of any size are welcome.
 
-    git clone https://github.com/OWNER/printsplit && cd printsplit
+    git clone https://github.com/sebvertere/printsplit && cd printsplit
     python -m venv .venv && .venv/bin/pip install -e ".[dev]" && .venv/bin/pytest
 
 ## Map of the code

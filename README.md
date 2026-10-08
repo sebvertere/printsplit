@@ -2,10 +2,10 @@
 
 Open-source tool that splits a big model (armor, costume pieces, props) into parts that fit the printers you actually own — one printer or a mixed fleet — with dowel sockets on every seam, a 3D preview showing each printer's build volume around its part, and a Rhino importer.
 
-**Try it:** [live demo viewer](https://OWNER.github.io/printsplit/demo/) · [Open in GitHub Codespaces](https://codespaces.new/OWNER/printsplit) (runs in your browser, no install)
+**Try it:** [live demo viewer](https://sebvertere.github.io/printsplit/demo/) · [Open in GitHub Codespaces](https://codespaces.new/sebvertere/printsplit) (runs in your browser, no install)
 
 ## Install
-    pip install git+https://github.com/OWNER/printsplit      # or: pipx install git+https://github.com/OWNER/printsplit
+    pip install git+https://github.com/sebvertere/printsplit      # or: pipx install git+https://github.com/sebvertere/printsplit
     printsplit                                               # opens the web app on http://localhost:8765
 
 
